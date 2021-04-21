@@ -1,0 +1,7 @@
+version: "3"
+services:
+  webrtc-sfu:
+    build: .
+    ports:
+      - "8080:8080"
+    command: go run /go/src/github.com/pion/example-webrtc-applications/sfu-ws/main.go
